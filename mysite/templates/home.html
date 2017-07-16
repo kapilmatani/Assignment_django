@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome, <small>{{ user.username }}</small>!</h2>
+  <p>Your email address: {{ user.email }}</p>
+  <p>Name: {{user.first_name}} {{user.last_name}}</p>  
+  <p>DOB: {{user.userprofile.dob}}</p>
+  <p>Mobile No: {{user.userprofile.mobile}}</p>
+  <p>Enrollment No: {{user.userprofile.enrollment_no}}</p>
+  <p>Department: {{ user.userprofile.department }}</p>
+  <p>Year: {{user.userprofile.year}}</p>
+{% endblock %}
